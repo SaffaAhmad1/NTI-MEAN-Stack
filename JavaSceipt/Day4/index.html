@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark">
+    <div class="container py-5">
+      <div class="card shadow-lg p-4 rounded-4 bg-secondary">
+        <h2 class="text-center mb-4">Event Countdown</h2>
+        <div class="mb-3">
+          <label for="eventName" class="form-label fw-bold">Event Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="eventName"
+            placeholder="Enter event name"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="timeOfEvent" class="form-label fw-bold"
+            >Time (in seconds)</label>
+          <input
+            type="number"
+            class="form-control"
+            id="timeOfEvent"
+            placeholder="Enter time in seconds"
+          />
+        </div>
+        <div class="d-grid mb-3">
+          <button
+            class="btn btn-success btn-lg rounded-pill"
+            onclick="setIntervalFunc()"
+          >
+            Start Countdown
+          </button>
+        </div>
+        <div class="alert alert-info text-center fs-4 fw-semibold" id="output">
+          Waiting for input...
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
